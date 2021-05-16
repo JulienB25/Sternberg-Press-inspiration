@@ -1,0 +1,198 @@
+/*************************
+****** GENERAL ***********
+**************************/
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'New Tegomin', serif;
+}
+
+/******************************
+********** HEADER ************
+****************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0%;
+    left: 0%;
+    padding: 1.8rem;
+    z-index: 100;
+    background-color: #F1F2EE;
+    box-shadow: 0px 0px 20px -2px;
+    
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #435058;
+}
+
+
+#books {
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: #435058;
+    font-weight: 200;
+    transform: scale(1);
+    transition: .2s;
+}
+
+#books:hover {
+    transform: scale(1.1);
+}
+
+#books:active {
+    transform: scale(0.9);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 38px;
+    overflow: hidden;
+}
+
+.anim2 {
+   
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.anim2:hover {
+    transform: translateY(-30px);
+}
+
+.anim2 p {
+    font-size: 1.6vw;
+    color: #435058;
+    font-weight: 200;
+}
+
+.anim2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/**************************************
+************* MAIN *******************
+*************************************/
+
+.container { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.book {
+    width: 20%;
+    height: 450px;
+    text-align: center;
+    overflow: hidden;
+    
+
+}
+
+.anim {
+    transform: translateY(0px);
+    transition: 0.6s;
+}
+
+.anim:hover {
+    transform: translateY(-285px);
+}
+
+
+.book:nth-child(odd) {background-color: #f8d9b1;}
+.book:nth-child(even) {background-color: #ffe0bf;}
+
+
+
+.book img {
+    width: 180px;
+    height: 220px;
+    margin-top: 60px;
+    box-shadow: 0px 8px 25px -2px;
+    
+
+}
+
+.book p {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.book .autor {
+    margin-top: 95px;
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+
+.book .edition {
+    margin-top: 5px;
+    font-family: 'Abel', sans-serif;
+}
+
+.book .description {
+    margin: 18px 15px 0;
+    padding-bottom: 10px;
+    font-family: 'Abel', sans-serif;
+
+}
+
+
+
+.book .price {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'New Tegomin', serif;;
+    text-align: right;
+    margin-right: 25px;
+    
+}
+
+/*****************************
+******* FOOTER **************
+***************************/
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #F1F2EE;
+    position: relative;
+    box-shadow: 0px 0px 30px -8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
